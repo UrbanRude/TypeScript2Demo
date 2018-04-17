@@ -11,13 +11,14 @@ Date.prototype.addDaysToCurrentDay = function(days:number):Date{
 
 Date.prototype.format = function():String{
     let dat = new Date(this.valueOf());
-    return dat.toDateString();
-    //return `${dat.getDate()}/${dat.getMonth()+1}/${dat.getFullYear()}`;
+    //return dat.toDateString();
+    return `${dat.getDate()}/${dat.getMonth()+1}/${dat.getFullYear()}`;
 }
 
 window.onload = function(){
     var currentDay = new Date();
     //console.log(currentDay.addDaysToCurrentDay(4));
     //console.log(currentDay.getDay().toString());
-    console.log(currentDay.addDaysToCurrentDay(4).format());
+    console.log(currentDay.addDaysToCurrentDay(4)
+                .format());
 }

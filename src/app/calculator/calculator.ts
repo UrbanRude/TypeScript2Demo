@@ -16,7 +16,6 @@ class Calculator implements ICalculator{
 }
 
 window.onload = function(){
-    
     var calc: ICalculator = new Calculator();
     
     console.log(`Resultado suma: ${calc.suma(1,2)}`);

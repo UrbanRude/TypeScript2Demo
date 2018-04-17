@@ -5,9 +5,7 @@ Date.prototype.addDaysToCurrentDay = function (days) {
 };
 Date.prototype.format = function () {
     let dat = new Date(this.valueOf());
-    let fecha;
-    fecha = `${dat.getDate()}/${dat.getMonth() + 1}/${dat.getFullYear()}`;
-    return fecha;
+    return `${dat.getDate()}/${dat.getMonth() + 1}/${dat.getFullYear()}`;
 };
 window.onload = function () {
     var currentDay = new Date();
